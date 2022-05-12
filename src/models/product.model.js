@@ -7,8 +7,7 @@ const productSchema=new mongoose.Schema(
         market_cap_rank: { type: Number, require: true },
         total_volume: { type: Number, require: true },
         total_supply: { type: Number, require: true },
-        image: { type: String, require: true },
-       
+        image: { type: String, require: true },  
     },
     {
         versionKey:false,
