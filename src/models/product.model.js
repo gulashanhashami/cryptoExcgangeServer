@@ -2,12 +2,13 @@ const mongoose=require("mongoose");
 const productSchema=new mongoose.Schema(
     {
         name: { type: String, require: true },
-        symbol: { type: String, require: true },
-        current_price: { type: Number, require: true },
-        market_cap_rank: { type: Number, require: true },
-        total_volume: { type: Number, require: true },
-        total_supply: { type: Number, require: true },
-        image: { type: String, require: true },  
+        data_symbols_count: { type: Number, require: true },
+        data_start: { type: String, require: true },
+        data_end: { type: String, require: true },
+        volume_1hrs_usd: { type: Number, require: true },
+        volume_1day_usd: { type: Number, require: true },
+        volume_1mth_usd: { type: Number, require: true },
+        url: { type: String, require: true },  
     },
     {
         versionKey:false,
